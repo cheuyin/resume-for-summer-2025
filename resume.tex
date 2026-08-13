@@ -1,5 +1,5 @@
 % ----- DOCUMENT CLASS ----- %
-\documentclass[letterpaper]{article}
+\documentclass[letterpaper,11pt]{article}
 
 % ----- PACKAGES ----- %
 \usepackage[empty]{fullpage}        % remove default margins/header space
@@ -24,11 +24,11 @@
 \setlength{\footskip}{3.60004pt}
 
 % ----- MARGINS ----- %
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-0.45in}
+\addtolength{\textheight}{1.12in}
 
 \urlstyle{same}
 
@@ -38,8 +38,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large\color{NavyBlue}
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{0pt}\scshape\raggedright\large\color{NavyBlue}
+}{}{0em}{}[\color{black}\titlerule \vspace{4pt}]
 
 % Ensures generated PDF is machine / ATS readable %
 \pdfgentounicode=1
@@ -47,32 +47,30 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{#1}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{p{0.64\textwidth}@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
-\newcommand{\resumeProjectHeading}[1]{
+\newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \\
-    \end{tabular*}\vspace{-7pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \small#2 \\
+    \end{tabular*}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=5pt, parsep=0pt, topsep=2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2.5pt, parsep=0pt, topsep=2pt, leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 % ===== RESUME STARTS HERE ===== %
 
@@ -80,8 +78,12 @@
 
 % ----- RESUME HEADER ----- %
 \begin{center}
-    {\color{NavyBlue}\textbf{\huge \scshape Stanley Cheung}} \\
-    \vspace{5pt}
+    {\color{NavyBlue}\textbf{\huge Yin (Stanley) Cheung}} \\
+    \vspace{6pt}
+    {\small Backend / Full-stack / AI Engineering $|$ Fall 2026 \& Winter 2027 internships} \\
+    \vspace{6pt}
+    Vancouver, BC $|$
+    \href{https://www.linkedin.com/in/yinstanleycheung}{\underline{linkedin.com/in/yinstanleycheung}} $|$
     \href{https://github.com/cheuyin}{\underline{github.com/cheuyin}} $|$
     \href{mailto:yinstanleycheung@gmail.com}{\underline{yinstanleycheung@gmail.com}}
 \end{center}
@@ -91,10 +93,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {The University of British Columbia}{September 2022 -- May 2027}
-      {B.Sc, Major in Computer Science}{Vancouver, BC}
+      {B.Sc. Computer Science $|$ Average 88\%}{Vancouver, BC}
       \resumeItemListStart
-        \resumeItem{\textbf{Courses}: Machine Learning, Computer Networking, Relational Databases, Algorithms \& Data Structures, Computer Systems \& Hardware, Object-Oriented
-Programming}
+        \resumeItem{\textbf{Courses:} Machine Learning, Computer Networking, Relational Databases, Algorithms \& Data Structures}
         \resumeItem{\textbf{Awards:} 2025 Dean's List, 2024 Charles \& Jane Banks Scholarship, 2023 Dean's List}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -103,24 +104,14 @@ Programming}
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Software Engineer Intern $|$ \normalfont{TypeScript, Express.js, PostgreSQL, AWS, React}}{January 2024 -- July 2024}
-      {VoltSafe Inc.} {Vancouver, BC}
+      {Software Engineer Intern}{January 2024 -- July 2024}
+      {VoltSafe Inc. $|$ TypeScript, Express.js, PostgreSQL, AWS, React}{Vancouver, BC}
         \resumeItemListStart
-          \resumeItem{Designed and implemented an end-to-end RBAC system using Express.js, PostgreSQL, and AWS Cognito to secure an internal admin dashboard.}
-          \resumeItem{Developed and Dockerized a server monitoring system using React, Express, and Prometheus, enabling real-time collection and analysis of CPU, RAM, and disk metrics
-across 7+ EC2 web and database servers.}
-          \resumeItem{Built a RESTful document and image storage service for a marina management app using AWS S3, enabling users to upload, store, and retrieve files while reducing bandwidth costs.}
-          \resumeItem{Conducted a performance analysis of the marina management app using Chrome Lighthouse, reducing total app bundle size by 22\% by pruning unused static assets,
-leading to improved load times.}
+          \resumeItem{Shipped RBAC for an internal admin dashboard with AWS Cognito so staff only reached the routes and data their role allowed.}
+          \resumeItem{Dockerized a Prometheus monitoring service for CPU, RAM, and disk on 7+ EC2 web and database servers; the React client polled a REST API with React Query.}
+          \resumeItem{Built an S3-backed file API for a marina management app so document and image uploads did not go through the app server.}
+          \resumeItem{Cut the marina app JS bundle 22\% by pruning unused static assets after a Lighthouse pass.}
         \resumeItemListEnd
-
-      \resumeSubheading
-        {AP Computer Science Instructor}{October 2022 -- February 2023}
-        {iSmart Education Canada}{Vancouver, BC}
-        \resumeItemListStart
-          \resumeItem{Designed weekly algorithms, data structures, and Java lessons; supported students in achieving 5/5 on the 2023 AP CSA exam.}
-        \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
@@ -128,37 +119,30 @@ leading to improved load times.}
     \resumeSubHeadingListStart
 
     \resumeProjectHeading
-        {\textbf{CreateYourStory.ai} $|$ Python, FastAPI, React, TypeScript, SQLModel $|$ \href{https://github.com/cheuyin/createyourstory.ai}{\underline{github.com/cheuyin/createyourstory.ai}}}
+        {\textbf{CreateYourStory.ai} $|$ Python, FastAPI, React, SQLite}
+        {\href{https://github.com/cheuyin/createyourstory.ai}{\underline{GitHub}}}
           \resumeItemListStart
-            \resumeItem{Developed and deployed a full-stack AI storytelling app using React/TypeScript and FastAPI that generates interactive branching narratives from user prompts.}
-            \resumeItem{Built a resilient background-job system for asynchronous text and image generation with persisted job status, client polling, request validation, and failure handling.}
-            \resumeItem{Implemented JWT/Argon2 authentication, guest sessions, ownership-based authorization, and SQLModel persistence to securely manage saved stories.}
+            \resumeItem{Built a FastAPI background-job pipeline for LLM and image generation with persisted job status so the React client could poll instead of blocking on one long request.}
+            \resumeItem{Validated model output as a Pydantic story graph (nodes, choices, endings) before saving, so broken generations failed closed instead of writing junk to SQLite.}
+            \resumeItem{Added JWT/Argon2 auth, guest sessions, and ownership checks so saved stories stayed private to their owner.}
+            \resumeItem{Covered the backend with 13 tests, including mocked model calls, that run in CI.}
           \resumeItemListEnd
 
     \resumeProjectHeading
-        {\textbf{UBC Course Explorer} $|$ TypeScript, React, Express.js, Node.js $|$ \href{https://github.com/cheuyin/ubc-course-explorer}{\underline{github.com/cheuyin/ubc-course-explorer}}}
+        {\textbf{AutoDater} $|$ TypeScript, Obsidian API}
+        {\href{https://community.obsidian.md/plugins/autodater}{\underline{Plugin}}}
           \resumeItemListStart
-            \resumeItem{Built a full-stack analytics app for exploring 64,000+ UBC course sections across 189 departments, featuring grade-trend charts, instructor and department profiles, and a campus room finder, using React 19, TanStack Query, and an Express + TypeScript REST API.}
-            \resumeItem{Implemented a JSON query language supporting nested boolean filters (AND/OR/NOT), wildcard string matching, multi-key sorting, and GROUP-BY aggregations (MAX/MIN/AVG/SUM/COUNT), with a validation layer that returns precise field-level error messages; verified by 100+ integration tests.}
-            \resumeItem{Engineered an asynchronous data-ingestion pipeline that unzips raw archives, parses course JSON, and scrapes building/room data from HTML (parse5) into a file-backed store, with job-status polling endpoints for long-running uploads and no external database.}
+            \resumeItem{Shipped an Obsidian community plugin that writes Created/Updated dates into note frontmatter ($\sim$350 downloads).}
+            \resumeItem{After a Reddit post ($\sim$33k views), added date-format options, folder exclusions, and renameable property labels from user feedback; a 6-second debounce avoids extra writes while typing.}
           \resumeItemListEnd
 
-
-      \resumeProjectHeading
-        {\textbf{Local AI Coding Agent} $|$ Python, Google Gemini API, Rich $|$ \href{https://github.com/cheuyin/ai-agent-python}{\underline{github.com/cheuyin/ai-agent-python}}}
+    \resumeProjectHeading
+        {\textbf{Local AI Coding Agent} $|$ Python, Gemini API}
+        {\href{https://github.com/cheuyin/ai-agent-python}{\underline{GitHub}}}
           \resumeItemListStart
-            \resumeItem{Engineered an autonomous agentic loop using the Google Gemini API, dispatching file system tool calls across up to 20 iterative model rounds until task
-completion.}
-            \resumeItem{Implemented context window management that tracks prompt token usage per round and trims conversation history when approaching the 1M-token limit, enabling
-indefinitely long sessions.}
-            \resumeItem{Blocked path traversal attacks via \texttt{os.path.commonpath} validation on all file operations; implemented 3-attempt exponential backoff retry for transient
-API failures.}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-        {\textbf{AutoDater} $|$ TypeScript, Obsidian API $|$ \href{https://community.obsidian.md/plugins/autodater}{\underline{community.obsidian.md/plugins/autodater}}}
-          \resumeItemListStart
-            \resumeItem{Launched an open-source Obsidian plugin that automates note timestamps, achieving 123 downloads and improving note traceability.}
+            \resumeItem{Built a Gemini agent loop that calls sandboxed file tools (read, write, run, delete) for up to 20 rounds until the task finishes.}
+            \resumeItem{Validated every file-tool path against the working directory and rejected any that would escape it, so a bad tool call could not reach the rest of the filesystem.}
+            \resumeItem{Persisted sessions to JSON so runs can resume after a stop.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -167,9 +151,9 @@ API failures.}
 \section{Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Languages:}{ Python, TypeScript, SQL, Java, JavaScript} \\
-        \textbf{Frameworks:}{ FastAPI, Express.js, React, SQLModel} \\
-        \textbf{Other:}{ PostgreSQL, Docker, AWS, Linux, Git, Node.js, RESTful APIs} \\
+        \textbf{Languages:}{ Python, TypeScript, SQL, Java} \\
+        \textbf{Frameworks:}{ FastAPI, Express.js, React, LangChain} \\
+        \textbf{Other:}{ PostgreSQL, Docker, AWS, Prometheus, Linux, Git} \\
         \textbf{Certifications:}{ AWS Certified Cloud Practitioner}
     }}
   \end{itemize}
