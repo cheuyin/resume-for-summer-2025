@@ -4,14 +4,14 @@
 #let location = "Vancouver, BC"
 #let email = "yinstanleycheung@gmail.com"
 #let github = "github.com/cheuyin"
-#let linkedin = "linkedin.com/in/yinstanleycheung"
+#let personal-site = "stanleycheung.com"
 
 #show: resume.with(
   author: name,
   location: location,
   email: email,
   github: github,
-  linkedin: linkedin,
+  personal-site: personal-site,
   accent-color: "#000000",
   font: "New Computer Modern",
   paper: "us-letter",
@@ -28,8 +28,7 @@
   degree: "B.Sc. Computer Science | Average 88%",
   consistent: true,
 )
-- *Courses:* Machine Learning, Computer Networking, Relational Databases, Algorithms & Data Structures
-- *Awards:* 2025 Dean's List, 2024 Charles & Jane Banks Scholarship, 2023 Dean's List
+- *Awards:* Dean's List (2023, 2025); Charles & Jane Banks Scholarship (2024)
 
 == Experience
 
@@ -56,7 +55,7 @@
 
 #generic-one-by-two(
   left: [*AutoDater* | TypeScript, Obsidian API (#link("https://community.obsidian.md/plugins/autodater")[Plugin])],
-  right: [May 2025],
+  right: dates-helper(start-date: "May 2025", end-date: "July 2026"),
 )
 - Shipped an Obsidian community plugin that writes Created/Updated dates into note frontmatter (\~450 downloads).
 - After a Reddit post (\~33k views), added date-format options, folder exclusions, and renameable property labels from user feedback; a 6-second debounce avoids extra writes while typing.
