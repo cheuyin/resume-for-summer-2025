@@ -6,4 +6,9 @@
 *.out
 *.synctex.gz
 
-# resume.pdf is intentionally tracked (displayed on GitHub)
+# Extra PDFs; resume.pdf is the tracked GitHub copy
+resume-typst.pdf
+Yin_Cheung_Resume.pdf
+
+# OS
+.DS_Store
