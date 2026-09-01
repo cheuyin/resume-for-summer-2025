@@ -42,7 +42,6 @@ typst compile applications/<yyyy-mm-company-role>/cover-letter.typ applications/
 ```
 
 The file to download and attach is `applications/<yyyy-mm-company-role>/Yin_Cheung_Resume.pdf`. Do not put company names, dates, or role tags in that filename.
-6. Log the application in the tracker with the folder path so the interview packet matches what they saw.
 
 If a tailored edit is simply a better sentence, fold it into the root `resume.typ` and commit that. That is the only tailoring that belongs in git.
 
@@ -80,6 +79,8 @@ applications/
     Yin_Cheung_Resume.pdf
     cover-letter.pdf
 ```
+
+Do not create a tracker in this repo. Application logging lives in Google Sheets.
 
 Do not create a git branch per company. Do not add reusable Backend / Full-stack / ML variants unless those are stable tracks sent often.
 
