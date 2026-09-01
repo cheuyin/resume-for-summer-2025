@@ -85,5 +85,5 @@
 - *Languages:* Python, TypeScript, SQL
 - *Frameworks:* FastAPI, Express.js, React
 - *Other:* PostgreSQL, Docker, AWS, Prometheus, Linux, Git
-- *Agentic coding:* Cursor, Claude Code
+- *Agentic coding:* Cursor, Claude Code, MCP
 - *Certifications:* AWS Certified Cloud Practitioner
