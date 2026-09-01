@@ -24,7 +24,7 @@
 #edu(
   institution: "The University of British Columbia",
   location: "Vancouver, BC",
-  dates: "Expected May 2027",
+  dates: "Expected November 2027",
   degree: "B.Sc. Computer Science | Average 88%",
   consistent: true,
 )
@@ -54,6 +54,13 @@
 - Added JWT/Argon2 auth, guest sessions, and ownership checks so saved stories stayed private to their owner.
 
 #generic-one-by-two(
+  left: [*UBC Course Explorer* | TypeScript, React, Express.js (#link("https://github.com/cheuyin/ubc-course-explorer")[GitHub])],
+  right: dates-helper(start-date: "June 2026", end-date: "July 2026"),
+)
+- Built a React and Express app over 64,000+ UBC course sections across 189 departments, with grade-trend charts, instructor profiles, and a campus room finder.
+- Implemented a JSON query language with nested AND/OR/NOT, wildcards, and GROUP-BY aggregations, plus field-level validation, covered by 100+ integration tests.
+
+#generic-one-by-two(
   left: [*AutoDater* | TypeScript, Obsidian API (#link("https://community.obsidian.md/plugins/autodater")[Plugin])],
   right: dates-helper(start-date: "May 2025", end-date: "July 2026"),
 )
@@ -67,8 +74,16 @@
 - Built a Gemini agent loop that calls sandboxed file tools (read, write, run, delete) for up to 20 rounds until the task finishes.
 - Validated every file-tool path against the working directory and rejected any that would escape it, so a bad tool call could not reach the rest of the filesystem.
 
+#generic-one-by-two(
+  left: [*Pathfinding Visualizer* | TypeScript, React, HTML5 Canvas (#link("https://cheuyin.github.io/pathfinding-visualizer/")[Demo])],
+  right: dates-helper(start-date: "August 2024", end-date: "June 2025"),
+)
+- Built a TypeScript/React visualizer for Dijkstra, A\*, and DFS, plus recursive-backtracking maze generation.
+- Rewrote grid rendering from React DOM to HTML5 Canvas with requestAnimationFrame, cutting redundant renders 86% (115k to 16k) and raising frame rate from 7 to 60+ FPS.
+
 == Skills
 - *Languages:* Python, TypeScript, SQL
 - *Frameworks:* FastAPI, Express.js, React
 - *Other:* PostgreSQL, Docker, AWS, Prometheus, Linux, Git
+- *Agentic coding:* Cursor, Claude Code
 - *Certifications:* AWS Certified Cloud Practitioner

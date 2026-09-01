@@ -9,6 +9,10 @@
 # Extra PDFs; resume.pdf is the tracked GitHub copy
 resume-typst.pdf
 Yin_Cheung_Resume.pdf
+cover-letter.pdf
+
+# Company-specific copies; never commit these
+applications/
 
 # OS
 .DS_Store
