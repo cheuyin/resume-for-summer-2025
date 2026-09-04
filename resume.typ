@@ -38,7 +38,7 @@
   company: "VoltSafe Inc. | TypeScript, Express.js, PostgreSQL, AWS, React",
   dates: dates-helper(start-date: "January 2024", end-date: "July 2024"),
 )
-- Shipped RBAC for an internal admin dashboard with AWS Cognito so staff only reached the routes and data their role allowed.
+- Built an internal admin dashboard from scratch in React with AWS Cognito, enforcing TOTP multi-factor authentication and role-based access control across protected routes.
 - Built an S3-backed file API for a marina management app so document and image uploads did not go through the app server.
 - Cut the marina app JS bundle 22% by pruning unused static assets after a Lighthouse pass.
 - Dockerized a Prometheus monitoring service for CPU, RAM, and disk on 7+ EC2 web and database servers; the React client polled a REST API with React Query.
