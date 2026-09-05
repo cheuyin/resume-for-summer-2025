@@ -46,11 +46,11 @@
 == Projects
 
 #generic-one-by-two(
-  left: [*CreateYourStory.ai* | Python, FastAPI, React, SQLite (#link("https://github.com/cheuyin/createyourstory.ai")[GitHub])],
-  right: dates-helper(start-date: "June 2026", end-date: "July 2026"),
+  left: [*CreateYourStory.ai* | Python, FastAPI, React, PostgreSQL (#link("https://github.com/cheuyin/createyourstory.ai")[GitHub])],
+  right: dates-helper(start-date: "June 2026", end-date: "September 2026"),
 )
 - Built a FastAPI background-job pipeline for LLM and image generation with persisted job status so the React client could poll instead of blocking on one long request.
-- Validated model output as a Pydantic story graph (nodes, choices, endings) before saving, so broken generations failed closed instead of writing junk to SQLite.
+- Validated model output as a Pydantic story graph (nodes, choices, endings) before saving, so broken generations failed closed instead of writing junk to PostgreSQL.
 - Added JWT/Argon2 auth, guest sessions, and ownership checks so saved stories stayed private to their owner.
 
 #generic-one-by-two(
